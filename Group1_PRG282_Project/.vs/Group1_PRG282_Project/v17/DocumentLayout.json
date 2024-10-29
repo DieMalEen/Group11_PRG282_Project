@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Alex\\Documents\\GitHub\\Group1_PRG282_Project\\Group1_PRG282_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE373F42-13E0-4981-AC7A-A06C6D0B46DA}|Group1_PRG282_Project.csproj|c:\\users\\alex\\documents\\github\\group1_prg282_project\\group1_prg282_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AE373F42-13E0-4981-AC7A-A06C6D0B46DA}|Group1_PRG282_Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AE373F42-13E0-4981-AC7A-A06C6D0B46DA}|Group1_PRG282_Project.csproj|c:\\users\\alex\\documents\\github\\group1_prg282_project\\group1_prg282_project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AE373F42-13E0-4981-AC7A-A06C6D0B46DA}|Group1_PRG282_Project.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,13 +19,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Alex\\Documents\\GitHub\\Group1_PRG282_Project\\Group1_PRG282_Project\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Alex\\Documents\\GitHub\\Group1_PRG282_Project\\Group1_PRG282_Project\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "Title": "mainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Alex\\Documents\\GitHub\\Group1_PRG282_Project\\Group1_PRG282_Project\\mainForm.cs",
+              "RelativeDocumentMoniker": "mainForm.cs",
+              "ToolTip": "C:\\Users\\Alex\\Documents\\GitHub\\Group1_PRG282_Project\\Group1_PRG282_Project\\mainForm.cs [Design]",
+              "RelativeToolTip": "mainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T11:24:33.152Z",
+              "WhenOpened": "2024-10-29T11:30:48.57Z",
               "EditorCaption": " [Design]"
             }
           ]
