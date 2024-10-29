@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\GitHub\\Group1_PRG282_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{86171E4F-D03D-4B15-80DC-E31C8EB06926}|Solution Items{86171E4F-D03D-4B15-80DC-E31C8EB06926}|D:\\GitHub\\Group1_PRG282_Project\\students.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{86171E4F-D03D-4B15-80DC-E31C8EB06926}|Solution Items{86171E4F-D03D-4B15-80DC-E31C8EB06926}|solutionrelative:students.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|D:\\GitHub\\Group1_PRG282_Project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|D:\\GitHub\\Group1_PRG282_Project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|d:\\github\\group1_prg282_project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{86171E4F-D03D-4B15-80DC-E31C8EB06926}|Solution Items{86171E4F-D03D-4B15-80DC-E31C8EB06926}|D:\\GitHub\\Group1_PRG282_Project\\students.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{86171E4F-D03D-4B15-80DC-E31C8EB06926}|Solution Items{86171E4F-D03D-4B15-80DC-E31C8EB06926}|solutionrelative:students.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|D:\\GitHub\\Group1_PRG282_Project\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "students.txt",
               "DocumentMoniker": "D:\\GitHub\\Group1_PRG282_Project\\students.txt",
               "RelativeDocumentMoniker": "students.txt",
@@ -53,14 +53,14 @@
               "RelativeDocumentMoniker": "mainForm.cs",
               "ToolTip": "D:\\GitHub\\Group1_PRG282_Project\\mainForm.cs",
               "RelativeToolTip": "mainForm.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCUAAAA0AAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCgAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T14:44:07.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "mainForm.cs [Design]",
               "DocumentMoniker": "D:\\GitHub\\Group1_PRG282_Project\\mainForm.cs",
               "RelativeDocumentMoniker": "mainForm.cs",
@@ -80,8 +80,7 @@
               "RelativeToolTip": "addForm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T14:53:08.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T14:53:08.962Z"
             },
             {
               "$type": "Document",
@@ -92,8 +91,7 @@
               "ToolTip": "D:\\GitHub\\Group1_PRG282_Project\\addForm.cs [Design]",
               "RelativeToolTip": "addForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T14:39:06.975Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-29T14:39:06.975Z"
             }
           ]
         }

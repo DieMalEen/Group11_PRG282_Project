@@ -36,6 +36,7 @@ namespace Group1_PRG282_Project
             var rows = File.ReadAllLines(@"..\..\students.txt");
 
             var list = (from column in rows.ToList()
+                        where !string.IsNullOrWhiteSpace(column) // Skip empty lines
                         select new gridHeadings
                         {
                             ID = column.Split(new string[] {","}, StringSplitOptions.None)[0],

@@ -86,9 +86,20 @@
             // 
             // dataStudents
             // 
+            this.dataStudents.AllowUserToAddRows = false;
+            this.dataStudents.AllowUserToDeleteRows = false;
+            this.dataStudents.AllowUserToResizeColumns = false;
+            this.dataStudents.AllowUserToResizeRows = false;
+            this.dataStudents.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataStudents.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataStudents.Location = new System.Drawing.Point(12, 12);
+            this.dataStudents.MultiSelect = false;
             this.dataStudents.Name = "dataStudents";
+            this.dataStudents.ReadOnly = true;
+            this.dataStudents.RowHeadersVisible = false;
+            this.dataStudents.RowHeadersWidth = 40;
+            this.dataStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataStudents.Size = new System.Drawing.Size(399, 150);
             this.dataStudents.TabIndex = 5;
             // 
