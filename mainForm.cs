@@ -15,12 +15,18 @@ namespace Group1_PRG282_Project
         public mainForm()
         {
             InitializeComponent();
+            dataStudents.Visible = false;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             var addStudent = new addForm();
-            addStudent.Show();
+            addStudent.ShowDialog();
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            dataStudents.Visible = true;
         }
     }
 }

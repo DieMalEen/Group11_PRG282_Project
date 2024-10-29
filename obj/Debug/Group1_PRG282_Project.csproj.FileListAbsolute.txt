@@ -1,0 +1,11 @@
+D:\GitHub\Group1_PRG282_Project\bin\Debug\Group1_PRG282_Project.exe.config
+D:\GitHub\Group1_PRG282_Project\bin\Debug\Group1_PRG282_Project.exe
+D:\GitHub\Group1_PRG282_Project\bin\Debug\Group1_PRG282_Project.pdb
+D:\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.csproj.AssemblyReference.cache
+D:\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.addForm.resources
+D:\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.mainForm.resources
+D:\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.Properties.Resources.resources
+D:\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.csproj.GenerateResource.cache
+D:\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.csproj.CoreCompileInputs.cache
+D:\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.exe
+D:\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.pdb

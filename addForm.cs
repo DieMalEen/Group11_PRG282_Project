@@ -16,5 +16,16 @@ namespace Group1_PRG282_Project
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            // Add text box inputs to students.txt
+            Close();
+        }
+
+        private void addForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
