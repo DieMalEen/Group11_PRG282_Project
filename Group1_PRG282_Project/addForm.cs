@@ -4,30 +4,23 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Group1_PRG282_Project
 {
-    public partial class mainForm : Form
+    public partial class addForm : Form
     {
-        public mainForm()
+        public addForm()
         {
             InitializeComponent();
-            studentGridView.Visible = false;
-        }
-
-        private void btnView_Click(object sender, EventArgs e)
-        {
-            studentGridView.Visible = true;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            var addForm = new addForm();
-            addForm.Show();
+            // Add information in textboxes to students.txt
+            Close();
         }
     }
 }
