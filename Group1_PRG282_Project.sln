@@ -7,8 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Group1_PRG282_Project", "Gr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{86171E4F-D03D-4B15-80DC-E31C8EB06926}"
 	ProjectSection(SolutionItems) = preProject
-		student.txt = student.txt
 		summary.txt = summary.txt
+		students.txt = students.txt
 	EndProjectSection
 EndProject
 Global
