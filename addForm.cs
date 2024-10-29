@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Group1_PRG282_Project
 {
-    public partial class mainForm : Form
+    public partial class addForm : Form
     {
-        public mainForm()
+        public addForm()
         {
             InitializeComponent();
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            var addStudent = new addForm();
-            addStudent.Show();
         }
     }
 }
