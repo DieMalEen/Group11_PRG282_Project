@@ -65,6 +65,7 @@
             this.btnSummary.TabIndex = 2;
             this.btnSummary.Text = "Summary";
             this.btnSummary.UseVisualStyleBackColor = true;
+            this.btnSummary.Click += new System.EventHandler(this.btnSummary_Click);
             // 
             // btnDelete
             // 
