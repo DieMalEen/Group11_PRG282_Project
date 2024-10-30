@@ -1,25 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\",
+  "WorkspaceRootPath": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\updateform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:updateform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\addform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:addform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|c:\\users\\dieter\\documents\\github\\group1_prg282_project\\updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|c:\\users\\ulrigh oosthuizen\\desktop\\college things\\prg_282_project\\group1_prg282_project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86171E4F-D03D-4B15-80DC-E31C8EB06926}|Solution Items{86171E4F-D03D-4B15-80DC-E31C8EB06926}|C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\students.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{86171E4F-D03D-4B15-80DC-E31C8EB06926}|Solution Items{86171E4F-D03D-4B15-80DC-E31C8EB06926}|solutionrelative:students.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:updateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86171E4F-D03D-4B15-80DC-E31C8EB06926}|Solution Items{86171E4F-D03D-4B15-80DC-E31C8EB06926}|C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\students.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{86171E4F-D03D-4B15-80DC-E31C8EB06926}|Solution Items{86171E4F-D03D-4B15-80DC-E31C8EB06926}|solutionrelative:students.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,41 +46,91 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "students.txt",
-              "DocumentMoniker": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\students.txt",
-              "RelativeDocumentMoniker": "students.txt",
-              "ToolTip": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\students.txt",
-              "RelativeToolTip": "students.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-29T15:54:35.874Z",
+              "DocumentIndex": 0,
+              "Title": "updateForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\updateForm.Designer.cs",
+              "RelativeDocumentMoniker": "updateForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\updateForm.Designer.cs",
+              "RelativeToolTip": "updateForm.Designer.cs",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAiwNYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T11:11:53.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "updateForm.cs",
+              "DocumentMoniker": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\updateForm.cs",
+              "RelativeDocumentMoniker": "updateForm.cs",
+              "ToolTip": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\updateForm.cs",
+              "RelativeToolTip": "updateForm.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAHkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T10:08:28.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "updateForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\updateForm.cs",
+              "RelativeDocumentMoniker": "updateForm.cs",
+              "ToolTip": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\updateForm.cs [Design]",
+              "RelativeToolTip": "updateForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T09:16:29.274Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "addForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\addForm.Designer.cs",
+              "RelativeDocumentMoniker": "addForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\addForm.Designer.cs",
+              "RelativeToolTip": "addForm.Designer.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T09:06:27.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "students.txt",
+              "DocumentMoniker": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\students.txt",
+              "RelativeDocumentMoniker": "students.txt",
+              "ToolTip": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\students.txt",
+              "RelativeToolTip": "students.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-29T15:54:35.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "mainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\mainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\mainForm.cs",
               "RelativeDocumentMoniker": "mainForm.cs",
-              "ToolTip": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\mainForm.cs",
+              "ToolTip": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\mainForm.cs",
               "RelativeToolTip": "mainForm.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCMAAABAAAAAAAAAAA==",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T14:44:07.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "mainForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\mainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\mainForm.cs",
               "RelativeDocumentMoniker": "mainForm.cs",
-              "ToolTip": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\mainForm.cs [Design]",
+              "ToolTip": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\mainForm.cs [Design]",
               "RelativeToolTip": "mainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T14:33:49.335Z",
@@ -72,24 +138,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "addForm.cs",
-              "DocumentMoniker": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\addForm.cs",
+              "DocumentMoniker": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\addForm.cs",
               "RelativeDocumentMoniker": "addForm.cs",
-              "ToolTip": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\addForm.cs",
+              "ToolTip": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\addForm.cs",
               "RelativeToolTip": "addForm.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCYAAAAvAAAAAAAAAA==",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T14:53:08.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "addForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\addForm.cs",
+              "DocumentMoniker": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\addForm.cs",
               "RelativeDocumentMoniker": "addForm.cs",
-              "ToolTip": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\addForm.cs [Design]",
+              "ToolTip": "C:\\Users\\Dieter\\Documents\\GitHub\\Group1_PRG282_Project\\addForm.cs [Design]",
               "RelativeToolTip": "addForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T14:39:06.975Z",

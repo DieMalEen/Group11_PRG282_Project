@@ -23,7 +23,12 @@ namespace Group1_PRG282_Project
         {
             var addStudent = new addForm();
             addStudent.ShowDialog();
+        }
 
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            updateForm updateFormInstance = new updateForm();
+            updateFormInstance.ShowDialog();
 
         }
 

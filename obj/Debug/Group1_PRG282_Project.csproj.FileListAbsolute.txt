@@ -20,3 +20,15 @@ C:\Users\Ulrigh Oosthuizen\Desktop\College Things\PRG_282_Project\Group1_PRG282_
 C:\Users\Ulrigh Oosthuizen\Desktop\College Things\PRG_282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.csproj.CoreCompileInputs.cache
 C:\Users\Ulrigh Oosthuizen\Desktop\College Things\PRG_282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.exe
 C:\Users\Ulrigh Oosthuizen\Desktop\College Things\PRG_282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.pdb
+C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\bin\Debug\Group1_PRG282_Project.exe.config
+C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\bin\Debug\Group1_PRG282_Project.exe
+C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\bin\Debug\Group1_PRG282_Project.pdb
+C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.csproj.AssemblyReference.cache
+C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.addForm.resources
+C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.mainForm.resources
+C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.Properties.Resources.resources
+C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.csproj.GenerateResource.cache
+C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.csproj.CoreCompileInputs.cache
+C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.exe
+C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.pdb
+C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.updateForm.resources
