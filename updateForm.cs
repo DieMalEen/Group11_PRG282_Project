@@ -47,14 +47,14 @@ namespace Group1_PRG282_Project
 
         private void UpdateBT_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(StudentID.Text, out int id))
+            if (int.TryParse(studentIDEnter.Text, out int id))
             {
                 var studentToUpdate = students.FirstOrDefault(s => s.ID == id);
                 if (studentToUpdate != null)
                 {
-                    studentToUpdate.Name = Name.Text;
-                    studentToUpdate.Age = int.Parse(Age.Text);
-                    studentToUpdate.Course = Course.Text;
+                    studentToUpdate.Name = nameEnter.Text;
+                    studentToUpdate.Age = int.Parse(ageEnter.Text);
+                    studentToUpdate.Course = courseEnter.Text;
 
                     SaveStudentsToFile();
                     LoadStudentData();
@@ -69,7 +69,7 @@ namespace Group1_PRG282_Project
 
         }
 
-        private void SaveStudentsToFile()
+        public void SaveStudentsToFile()
         {
             using (StreamWriter writer = new StreamWriter(fileName))
             {
@@ -82,34 +82,10 @@ namespace Group1_PRG282_Project
 
         private void ClearTextBoxes()
         {
-            StudentID.Clear();
-            Name.Clear();
-            Age.Clear();
-            Course.Clear();
-        }
-
-        private void SearchBT_Click(object sender, EventArgs e)
-        {
-            int id;
-            var filteredStudents = students.Where(s =>
-                (int.TryParse(StudentIDSearch.Text, out id) && s.ID == id) ||
-                (!string.IsNullOrWhiteSpace(NameSearch.Text) && s.Name.IndexOf(NameSearch.Text, StringComparison.OrdinalIgnoreCase) >= 0)
-            ).ToList();
-
-            DisplayStudentsInGrid(filteredStudents);
-
-            if (filteredStudents.Count == 1)
-            {
-                var student = filteredStudents[0];
-                StudentID.Text = student.ID.ToString();
-                Name.Text = student.Name;
-                Age.Text = student.Age.ToString();
-                Course.Text = student.Course;
-            }
-            else
-            {
-                ClearTextBoxes();
-            }
+            studentIDEnter.Clear();
+            nameEnter.Clear();
+            ageEnter.Clear();
+            courseEnter.Clear();
         }
 
         private void DisplayStudentsInGrid(List<Student> studentList)
@@ -119,7 +95,99 @@ namespace Group1_PRG282_Project
         }
         private void dataGridViewUpdate_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                // Get the DataGridView
+                DataGridView dgv = sender as DataGridView;
 
+                
+                int selectedId = (int)dgv.Rows[e.RowIndex].Cells["ID"].Value;
+
+                var filteredStudents = students.Where(s =>s.ID == selectedId).ToList(); //filter for name display when selecting a  name
+
+                if (filteredStudents.Count == 1) // Enters studnet details when pressing on student on datagridview
+                {
+                    var student = filteredStudents[0];
+                    studentIDEnter.Text = student.ID.ToString();
+                    nameEnter.Text = student.Name;
+                    ageEnter.Text = student.Age.ToString();
+                    courseEnter.Text = student.Course;
+                }
+                else
+                {
+                    ClearTextBoxes();
+                }
+            }
+        }
+
+        private void StudentIDSearch_TextChanged(object sender, EventArgs e)
+        {
+            DataGridView dgv = sender as DataGridView;
+
+
+             string searchText = StudentIDSearch.Text;
+
+            if (int.TryParse(searchText, out int selectedId))
+            {
+
+                var filteredStudents = students.Where(s => s.ID == selectedId).ToList();
+
+                if (filteredStudents.Count == 1) 
+                {
+                    var student = filteredStudents[0];
+                    studentIDEnter.Text = student.ID.ToString();
+                    nameEnter.Text = student.Name;
+                    ageEnter.Text = student.Age.ToString();
+                    courseEnter.Text = student.Course;
+                }
+                else
+                {
+                    ClearTextBoxes();
+                }
+            }
+            else
+            {
+                var filteredStudents = students;
+
+                if (filteredStudents.Count == 1) 
+                {
+                    var student = filteredStudents[0];
+                    studentIDEnter.Text = student.ID.ToString();
+                    nameEnter.Text = student.Name;
+                    ageEnter.Text = student.Age.ToString();
+                    courseEnter.Text = student.Course;
+                }
+                else
+                {
+                    ClearTextBoxes();
+                }
+            }
+
+            
+        }
+
+        private void NameSearch_TextChanged(object sender, EventArgs e)
+        {
+             
+            var filteredStudents = students.Where(s =>
+            (!string.IsNullOrWhiteSpace(NameSearch.Text)&& s.Name.IndexOf(NameSearch.Text, StringComparison.OrdinalIgnoreCase) >= 0)
+            ).ToList();
+
+            DisplayStudentsInGrid(filteredStudents);
+
+            if (filteredStudents.Count == 1)
+            {
+                var student = filteredStudents[0];
+                studentIDEnter.Text = student.ID.ToString();
+                nameEnter.Text = student.Name;
+                ageEnter.Text = student.Age.ToString();
+                courseEnter.Text = student.Course;
+            }
+            else
+            {
+                DisplayStudentsInGrid(students);
+                ClearTextBoxes();
+            }
         }
     }
     public class Student //object for list

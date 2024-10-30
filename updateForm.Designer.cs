@@ -38,20 +38,19 @@
             this.label7 = new System.Windows.Forms.Label();
             this.NameSearch = new System.Windows.Forms.TextBox();
             this.StudentIDSearch = new System.Windows.Forms.TextBox();
-            this.StudentID = new System.Windows.Forms.TextBox();
-            this.Name = new System.Windows.Forms.TextBox();
-            this.Age = new System.Windows.Forms.TextBox();
-            this.Course = new System.Windows.Forms.TextBox();
+            this.studentIDEnter = new System.Windows.Forms.TextBox();
+            this.nameEnter = new System.Windows.Forms.TextBox();
+            this.ageEnter = new System.Windows.Forms.TextBox();
+            this.courseEnter = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.UpdateBT = new System.Windows.Forms.Button();
-            this.SearchBT = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUpdate)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 179);
+            this.label1.Location = new System.Drawing.Point(80, 154);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 0;
@@ -59,9 +58,18 @@
             // 
             // dataGridViewUpdate
             // 
+            this.dataGridViewUpdate.AllowUserToAddRows = false;
+            this.dataGridViewUpdate.AllowUserToDeleteRows = false;
+            this.dataGridViewUpdate.AllowUserToResizeColumns = false;
+            this.dataGridViewUpdate.AllowUserToResizeRows = false;
+            this.dataGridViewUpdate.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewUpdate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewUpdate.Location = new System.Drawing.Point(74, 12);
+            this.dataGridViewUpdate.MultiSelect = false;
             this.dataGridViewUpdate.Name = "dataGridViewUpdate";
+            this.dataGridViewUpdate.ReadOnly = true;
+            this.dataGridViewUpdate.RowHeadersVisible = false;
+            this.dataGridViewUpdate.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewUpdate.Size = new System.Drawing.Size(422, 133);
             this.dataGridViewUpdate.TabIndex = 2;
             this.dataGridViewUpdate.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUpdate_CellContentClick);
@@ -78,7 +86,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(318, 195);
+            this.label3.Location = new System.Drawing.Point(226, 174);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 4;
@@ -87,7 +95,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(169, 195);
+            this.label4.Location = new System.Drawing.Point(77, 174);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 5;
@@ -122,45 +130,47 @@
             // 
             // NameSearch
             // 
-            this.NameSearch.Location = new System.Drawing.Point(321, 211);
+            this.NameSearch.Location = new System.Drawing.Point(229, 190);
             this.NameSearch.Name = "NameSearch";
             this.NameSearch.Size = new System.Drawing.Size(100, 20);
             this.NameSearch.TabIndex = 9;
+            this.NameSearch.TextChanged += new System.EventHandler(this.NameSearch_TextChanged);
             // 
             // StudentIDSearch
             // 
-            this.StudentIDSearch.Location = new System.Drawing.Point(172, 211);
+            this.StudentIDSearch.Location = new System.Drawing.Point(80, 190);
             this.StudentIDSearch.Name = "StudentIDSearch";
             this.StudentIDSearch.Size = new System.Drawing.Size(100, 20);
             this.StudentIDSearch.TabIndex = 10;
+            this.StudentIDSearch.TextChanged += new System.EventHandler(this.StudentIDSearch_TextChanged);
             // 
-            // StudentID
+            // studentIDEnter
             // 
-            this.StudentID.Location = new System.Drawing.Point(21, 283);
-            this.StudentID.Name = "StudentID";
-            this.StudentID.Size = new System.Drawing.Size(86, 20);
-            this.StudentID.TabIndex = 11;
+            this.studentIDEnter.Location = new System.Drawing.Point(21, 283);
+            this.studentIDEnter.Name = "studentIDEnter";
+            this.studentIDEnter.Size = new System.Drawing.Size(86, 20);
+            this.studentIDEnter.TabIndex = 11;
             // 
-            // Name
+            // nameEnter
             // 
-            this.Name.Location = new System.Drawing.Point(172, 283);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(86, 20);
-            this.Name.TabIndex = 12;
+            this.nameEnter.Location = new System.Drawing.Point(172, 283);
+            this.nameEnter.Name = "nameEnter";
+            this.nameEnter.Size = new System.Drawing.Size(86, 20);
+            this.nameEnter.TabIndex = 12;
             // 
-            // Age
+            // ageEnter
             // 
-            this.Age.Location = new System.Drawing.Point(321, 283);
-            this.Age.Name = "Age";
-            this.Age.Size = new System.Drawing.Size(86, 20);
-            this.Age.TabIndex = 13;
+            this.ageEnter.Location = new System.Drawing.Point(321, 283);
+            this.ageEnter.Name = "ageEnter";
+            this.ageEnter.Size = new System.Drawing.Size(86, 20);
+            this.ageEnter.TabIndex = 13;
             // 
-            // Course
+            // courseEnter
             // 
-            this.Course.Location = new System.Drawing.Point(459, 283);
-            this.Course.Name = "Course";
-            this.Course.Size = new System.Drawing.Size(86, 20);
-            this.Course.TabIndex = 14;
+            this.courseEnter.Location = new System.Drawing.Point(459, 283);
+            this.courseEnter.Name = "courseEnter";
+            this.courseEnter.Size = new System.Drawing.Size(86, 20);
+            this.courseEnter.TabIndex = 14;
             // 
             // label8
             // 
@@ -173,7 +183,7 @@
             // 
             // UpdateBT
             // 
-            this.UpdateBT.Location = new System.Drawing.Point(459, 203);
+            this.UpdateBT.Location = new System.Drawing.Point(410, 182);
             this.UpdateBT.Name = "UpdateBT";
             this.UpdateBT.Size = new System.Drawing.Size(86, 35);
             this.UpdateBT.TabIndex = 16;
@@ -181,28 +191,17 @@
             this.UpdateBT.UseVisualStyleBackColor = true;
             this.UpdateBT.Click += new System.EventHandler(this.UpdateBT_Click);
             // 
-            // SearchBT
-            // 
-            this.SearchBT.Location = new System.Drawing.Point(21, 195);
-            this.SearchBT.Name = "SearchBT";
-            this.SearchBT.Size = new System.Drawing.Size(86, 35);
-            this.SearchBT.TabIndex = 17;
-            this.SearchBT.Text = "Search";
-            this.SearchBT.UseVisualStyleBackColor = true;
-            this.SearchBT.Click += new System.EventHandler(this.SearchBT_Click);
-            // 
             // updateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 329);
-            this.Controls.Add(this.SearchBT);
             this.Controls.Add(this.UpdateBT);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.Course);
-            this.Controls.Add(this.Age);
-            this.Controls.Add(this.Name);
-            this.Controls.Add(this.StudentID);
+            this.Controls.Add(this.courseEnter);
+            this.Controls.Add(this.ageEnter);
+            this.Controls.Add(this.nameEnter);
+            this.Controls.Add(this.studentIDEnter);
             this.Controls.Add(this.StudentIDSearch);
             this.Controls.Add(this.NameSearch);
             this.Controls.Add(this.label7);
@@ -213,7 +212,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridViewUpdate);
             this.Controls.Add(this.label1);
-            this.Text = "updateForm";
+            this.Name = "updateForm";
+            this.ShowIcon = false;
+            this.Text = "Update Student";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUpdate)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -232,12 +233,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox NameSearch;
         private System.Windows.Forms.TextBox StudentIDSearch;
-        private System.Windows.Forms.TextBox StudentID;
-        private System.Windows.Forms.TextBox Name;
-        private System.Windows.Forms.TextBox Age;
-        private System.Windows.Forms.TextBox Course;
+        private System.Windows.Forms.TextBox studentIDEnter;
+        private System.Windows.Forms.TextBox nameEnter;
+        private System.Windows.Forms.TextBox ageEnter;
+        private System.Windows.Forms.TextBox courseEnter;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button UpdateBT;
-        private System.Windows.Forms.Button SearchBT;
     }
 }

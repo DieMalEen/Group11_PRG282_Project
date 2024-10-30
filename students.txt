@@ -1,4 +1,4 @@
 600220,Vaughn du Preez,20,BIT
-600158,Dieter Olivier,20,BCOM
+600158,Dieter Oliver,20,BCOM
 577952,Ulrigh Oosthuizen,19,BIT
 600663,Petri Loots,20,BIT
