@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|c:\\users\\ulrigh oosthuizen\\desktop\\college things\\prg_282_project\\group1_prg282_project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|c:\\users\\ulrigh oosthuizen\\desktop\\college things\\prg_282_project\\group1_prg282_project\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86171E4F-D03D-4B15-80DC-E31C8EB06926}|Solution Items{86171E4F-D03D-4B15-80DC-E31C8EB06926}|C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\students.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F25547D-4568-414D-9CA8-0CF2FAE48EDA}|Group1_PRG282_Project.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "students.txt",
               "DocumentMoniker": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\students.txt",
               "RelativeDocumentMoniker": "students.txt",
@@ -47,13 +47,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "mainForm.cs",
               "DocumentMoniker": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\mainForm.cs",
               "RelativeDocumentMoniker": "mainForm.cs",
               "ToolTip": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\mainForm.cs",
               "RelativeToolTip": "mainForm.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCMAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAIwFAAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T14:44:07.68Z",
               "EditorCaption": ""
@@ -72,20 +72,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "addForm.cs",
               "DocumentMoniker": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\addForm.cs",
               "RelativeDocumentMoniker": "addForm.cs",
               "ToolTip": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\addForm.cs",
               "RelativeToolTip": "addForm.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCYAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwDYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T14:53:08.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "addForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ulrigh Oosthuizen\\Desktop\\College Things\\PRG_282_Project\\Group1_PRG282_Project\\addForm.cs",
               "RelativeDocumentMoniker": "addForm.cs",

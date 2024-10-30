@@ -56,32 +56,5 @@ namespace Group1_PRG282_Project
         
             Close();
         }
-
-        private void addForm_Load(object sender, EventArgs e) //Form layout
-        {
-
-        }
-
-        private void txbID_TextChanged(object sender, EventArgs e) //ID Textbox
-        {
-
-        }
-
-        private void txbName_TextChanged(object sender, EventArgs e) //Name Textbox
-        {
-
-        }
-
-        private void txbAge_TextChanged(object sender, EventArgs e) //Age Textbox
-        {
-
-        }
-
-        private void txbCourse_TextChanged(object sender, EventArgs e) //Course Textbox
-        {
-
-        }
-
-       
     }
 }
