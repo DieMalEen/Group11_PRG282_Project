@@ -55,6 +55,7 @@
             this.txbID.Name = "txbID";
             this.txbID.Size = new System.Drawing.Size(176, 20);
             this.txbID.TabIndex = 1;
+            this.txbID.TextChanged += new System.EventHandler(this.txbID_TextChanged);
             // 
             // lblID
             // 
@@ -80,6 +81,7 @@
             this.txbName.Name = "txbName";
             this.txbName.Size = new System.Drawing.Size(176, 20);
             this.txbName.TabIndex = 4;
+            this.txbName.TextChanged += new System.EventHandler(this.txbName_TextChanged);
             // 
             // lblAge
             // 
@@ -96,6 +98,7 @@
             this.txbAge.Name = "txbAge";
             this.txbAge.Size = new System.Drawing.Size(176, 20);
             this.txbAge.TabIndex = 6;
+            this.txbAge.TextChanged += new System.EventHandler(this.txbAge_TextChanged);
             // 
             // lblCourse
             // 
@@ -112,6 +115,7 @@
             this.txbCourse.Name = "txbCourse";
             this.txbCourse.Size = new System.Drawing.Size(176, 20);
             this.txbCourse.TabIndex = 8;
+            this.txbCourse.TextChanged += new System.EventHandler(this.txbCourse_TextChanged);
             // 
             // btnAdd
             // 
