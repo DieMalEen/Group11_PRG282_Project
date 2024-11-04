@@ -90,6 +90,33 @@ namespace Group1_PRG282_Project
 
         }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (dataStudents.SelectedRows.Count > 0)
+            {
+                // Get the Student ID of the selected row
+                var selectedStudentId = dataStudents.SelectedRows[0].Cells[0].Value.ToString();
+
+                // Load all lines from the students.txt file
+                string studentFilePath = @"..\..\students.txt";
+                var lines = File.ReadAllLines(studentFilePath).ToList();
+
+                // Remove the line that contains the selected Student ID
+                lines = lines.Where(line => !line.StartsWith(selectedStudentId + ",")).ToList();
+
+                // Write the updated lines back to students.txt
+                File.WriteAllLines(studentFilePath, lines);
+
+                // Refresh DataGridView
+                btnView_Click(null, null); // Reload the data to reflect changes
+
+                MessageBox.Show("Student record deleted successfully.");
+            }
+            else
+            {
+                MessageBox.Show("Please select a student to delete.");
+            }
+        }
     }
 
     public class gridHeadings
@@ -99,4 +126,5 @@ namespace Group1_PRG282_Project
         public string Age { get; set; }
         public string Course { get; set; }
     }
+
 }
