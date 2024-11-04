@@ -19,6 +19,7 @@ namespace Group1_PRG282_Project
             dataStudents.Visible = false;
         }
 
+        // Button Add click event
         private void btnAdd_Click(object sender, EventArgs e)
         {
             var addStudent = new addForm();
