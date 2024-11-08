@@ -32,3 +32,15 @@ C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_P
 C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.exe
 C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.pdb
 C:\Users\Dieter\Documents\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.updateForm.resources
+C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\bin\Debug\Group1_PRG282_Project.exe.config
+C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\bin\Debug\Group1_PRG282_Project.exe
+C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\bin\Debug\Group1_PRG282_Project.pdb
+C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.csproj.AssemblyReference.cache
+C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.addForm.resources
+C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.mainForm.resources
+C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.Properties.Resources.resources
+C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.updateForm.resources
+C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.csproj.GenerateResource.cache
+C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.csproj.CoreCompileInputs.cache
+C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.exe
+C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.pdb

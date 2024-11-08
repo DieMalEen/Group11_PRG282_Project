@@ -4,3 +4,7 @@ Student count: 4
 Studnt Avg Age: 19,75
 Date and time of summary print: 2024/11/03 13:22:59
 
+Student count: 4
+Studnt Avg Age: 19,75
+Date and time of summary print: 2024/11/08 12:00:25
+

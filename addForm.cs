@@ -16,6 +16,32 @@ namespace Group1_PRG282_Project
         public addForm()
         {
             InitializeComponent();
+
+            //KeyPress event Handlers
+            txbID.KeyPress += new KeyPressEventHandler(OnlyNumbers);
+            txbAge.KeyPress += new KeyPressEventHandler(OnlyNumbers);
+            txbName.KeyPress += new KeyPressEventHandler(OnlyLetters);
+            txbName.KeyPress += new KeyPressEventHandler(OnlyLetters);
+        }
+
+        //Event handler to allow only numbers to be entered
+        private void OnlyNumbers(object sender, KeyPressEventArgs e)
+        {
+            //Ipout validation only allowing for digits; no letters
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; //Dissalow the key press
+            } 
+        }
+
+        //Event handler to allow only letters
+        private void OnlyLetters(object sender, KeyPressEventArgs e)
+        {
+            //Input validation only allowing letters; no digits
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true;  //Disallow the key press
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e) //Add button
@@ -28,12 +54,7 @@ namespace Group1_PRG282_Project
             string studentAge = txbAge.Text.Trim();
             string studentCourse = txbCourse.Text.Trim();
 
-            //Adding in extra validation to check if the input fields are empty
-            if(string.IsNullOrEmpty(studentId) || string.IsNullOrEmpty(studentName) || string.IsNullOrEmpty(studentAge) || string.IsNullOrEmpty(studentCourse))
-            {
-                MessageBox.Show("Please ensure all fields are filled out before submission");
-                return;
-            }
+
 
             //Formatting the strudent informarmation so it is stored nexto one another in a single line
             string studentInfo = $"{studentId},{studentName},{studentAge},{studentCourse}";

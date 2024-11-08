@@ -189,6 +189,11 @@ namespace Group1_PRG282_Project
                 ClearTextBoxes();
             }
         }
+
+        private void updateForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     public class Student //object for list
     {
