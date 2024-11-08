@@ -233,7 +233,6 @@
             this.Name = "updateForm";
             this.ShowIcon = false;
             this.Text = "Update Student";
-            this.Load += new System.EventHandler(this.updateForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUpdate)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

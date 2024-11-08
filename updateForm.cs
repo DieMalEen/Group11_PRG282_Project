@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Xml.Linq;
 
 namespace Group1_PRG282_Project
 {
@@ -19,8 +20,30 @@ namespace Group1_PRG282_Project
         public updateForm()
         {
             InitializeComponent();
+            StudentIDSearch.KeyPress += new KeyPressEventHandler(OnlyNumbers);
+            NameSearch.KeyPress += new KeyPressEventHandler(OnlyLetters);
+
             LoadStudentData();
             DisplayStudentsInGrid(students);
+        }
+
+        private void OnlyNumbers(object sender, KeyPressEventArgs e)
+        {
+            //Ipout validation only allowing for digits; no letters
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; //Dissalow the key press
+            }
+        }
+
+        //Event handler to allow only letters
+        private void OnlyLetters(object sender, KeyPressEventArgs e)
+        {
+            //Input validation only allowing letters; no digits
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true;  //Disallow the key press
+            }
         }
         public void LoadStudentData()
         {
@@ -93,6 +116,7 @@ namespace Group1_PRG282_Project
             dataGridViewUpdate.DataSource = null;
             dataGridViewUpdate.DataSource = studentList;
         }
+
         private void dataGridViewUpdate_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -161,9 +185,7 @@ namespace Group1_PRG282_Project
                 {
                     ClearTextBoxes();
                 }
-            }
-
-            
+            } 
         }
 
         private void NameSearch_TextChanged(object sender, EventArgs e)
@@ -190,10 +212,6 @@ namespace Group1_PRG282_Project
             }
         }
 
-        private void updateForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
     public class Student //object for list
     {
