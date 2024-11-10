@@ -14,14 +14,14 @@ namespace Group1_PRG282_Project
 {
     public partial class updateForm : Form
     {
-        public List<Student> students = new List<Student>();
-        public string fileName = @"..\..\students.txt";
+        public List<Student> students = new List<Student>(); //list 
+        public string fileName = @"..\..\students.txt";  // file location
 
         public updateForm()
         {
             InitializeComponent();
             StudentIDSearch.KeyPress += new KeyPressEventHandler(OnlyNumbers);
-            NameSearch.KeyPress += new KeyPressEventHandler(OnlyLetters);
+            NameSearch.KeyPress += new KeyPressEventHandler(OnlyLetters); // event subsicbtion 
 
             LoadStudentData();
             DisplayStudentsInGrid(students);
@@ -45,7 +45,7 @@ namespace Group1_PRG282_Project
                 e.Handled = true;  //Disallow the key press
             }
         }
-        public void LoadStudentData()
+        public void LoadStudentData() // Stores student info into list 
         {
             students.Clear();
             if (File.Exists(fileName))
@@ -68,7 +68,7 @@ namespace Group1_PRG282_Project
             }
         }
 
-        private void UpdateBT_Click(object sender, EventArgs e)
+        private void UpdateBT_Click(object sender, EventArgs e) // Runs update 
         {
             if (int.TryParse(studentIDEnter.Text, out int id))
             {
@@ -92,7 +92,7 @@ namespace Group1_PRG282_Project
 
         }
 
-        public void SaveStudentsToFile()
+        public void SaveStudentsToFile() // Saves students to file 
         {
             using (StreamWriter writer = new StreamWriter(fileName))
             {
@@ -103,7 +103,7 @@ namespace Group1_PRG282_Project
             }
         }
 
-        private void ClearTextBoxes()
+        private void ClearTextBoxes() // clears the boxes so no left over text 
         {
             studentIDEnter.Clear();
             nameEnter.Clear();
@@ -111,7 +111,7 @@ namespace Group1_PRG282_Project
             courseEnter.Clear();
         }
 
-        private void DisplayStudentsInGrid(List<Student> studentList)
+        private void DisplayStudentsInGrid(List<Student> studentList) //displays students in gird 
         {
             dataGridViewUpdate.DataSource = null;
             dataGridViewUpdate.DataSource = studentList;
@@ -144,7 +144,7 @@ namespace Group1_PRG282_Project
             }
         }
 
-        private void StudentIDSearch_TextChanged(object sender, EventArgs e)
+        private void StudentIDSearch_TextChanged(object sender, EventArgs e)  // search text for spefic student with ID 
         {
             DataGridView dgv = sender as DataGridView;
 
@@ -188,7 +188,7 @@ namespace Group1_PRG282_Project
             } 
         }
 
-        private void NameSearch_TextChanged(object sender, EventArgs e)
+        private void NameSearch_TextChanged(object sender, EventArgs e) // search text for spefic student with name 
         {
              
             var filteredStudents = students.Where(s =>
@@ -213,7 +213,7 @@ namespace Group1_PRG282_Project
         }
 
     }
-    public class Student //object for list
+    public class Student //Object for students 
     {
         public int ID { get; set; }
         public string Name { get; set; }
