@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Xml.Linq;
+using Group1_PRG282_Project.BusinessLayer;
 
 namespace Group1_PRG282_Project
 {
@@ -19,31 +20,15 @@ namespace Group1_PRG282_Project
 
         public updateForm()
         {
-            InitializeComponent();
-            StudentIDSearch.KeyPress += new KeyPressEventHandler(OnlyNumbers);
-            NameSearch.KeyPress += new KeyPressEventHandler(OnlyLetters); // event subsicbtion 
+            InitializeComponent();    
+            
+            // Updates KeyPress EvenHandlers
+            EventHandlers updateEvent = new EventHandlers();   
+            StudentIDSearch.KeyPress += new KeyPressEventHandler(updateEvent.OnlyNumbers);
+            NameSearch.KeyPress += new KeyPressEventHandler(updateEvent.OnlyLetters); // event subsicbtion 
 
             LoadStudentData();
             DisplayStudentsInGrid(students);
-        }
-
-        private void OnlyNumbers(object sender, KeyPressEventArgs e)
-        {
-            //Ipout validation only allowing for digits; no letters
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true; //Dissalow the key press
-            }
-        }
-
-        //Event handler to allow only letters
-        private void OnlyLetters(object sender, KeyPressEventArgs e)
-        {
-            //Input validation only allowing letters; no digits
-            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
-            {
-                e.Handled = true;  //Disallow the key press
-            }
         }
         public void LoadStudentData() // Stores student info into list 
         {
@@ -189,8 +174,7 @@ namespace Group1_PRG282_Project
         }
 
         private void NameSearch_TextChanged(object sender, EventArgs e) // search text for spefic student with name 
-        {
-             
+        {      
             var filteredStudents = students.Where(s =>
             (!string.IsNullOrWhiteSpace(NameSearch.Text)&& s.Name.IndexOf(NameSearch.Text, StringComparison.OrdinalIgnoreCase) >= 0)
             ).ToList();
@@ -213,16 +197,5 @@ namespace Group1_PRG282_Project
         }
 
     }
-    public class Student //Object for students 
-    {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public string Course { get; set; }
 
-        public override string ToString()
-        {
-            return $"{ID}, {Name}, {Age}, {Course}";
-        }
-    }
 }

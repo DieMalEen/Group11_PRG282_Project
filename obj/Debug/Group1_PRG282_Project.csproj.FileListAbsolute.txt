@@ -44,3 +44,4 @@ C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG2
 C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.csproj.CoreCompileInputs.cache
 C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.exe
 C:\Users\oosun\OneDrive\Desktop\College Stuff\PRG_282\PRG282_Project\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.pdb
+D:\GitHub\Group1_PRG282_Project\obj\Debug\Group1_PRG282_Project.updateForm.resources
