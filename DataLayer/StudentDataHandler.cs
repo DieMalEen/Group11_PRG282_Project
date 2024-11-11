@@ -14,24 +14,42 @@ namespace Group1_PRG282_Project.DataLayer
     {
         private readonly string fileName = @"..\..\students.txt";
         
-        // Runs when "View" is clicked on mainForm
+        List<Student> students = new List<Student>();
+        // Runs when grid needs to be updated or display student data
         public List<Student> GetAllStudents()
         {
-            // Read all lines from the students file
-            var rows = File.ReadAllLines(fileName);
+            var lines = File.ReadAllLines(fileName);
+            foreach (var line in lines)
+            {
+                var data = line.Split(',');
 
-            // Convert each line to a Student object, skipping empty lines
-            var students = (from column in rows
-                            where !string.IsNullOrWhiteSpace(column)
-                            select new Student
-                            {
-                                ID = Int32.Parse(column.Split(new string[] { "," }, StringSplitOptions.None)[0]),
-                                Name = column.Split(new string[] { "," }, StringSplitOptions.None)[1],
-                                Age = Int32.Parse(column.Split(new string[] { "," }, StringSplitOptions.None)[2]),
-                                Course = column.Split(new string[] { "," }, StringSplitOptions.None)[3]
-                            }).ToList();
-
+                students.Add(new Student
+                {
+                    ID = int.Parse(data[0].Trim()),
+                    Name = data[1].Trim(),
+                    Age = int.Parse(data[2].Trim()),
+                    Course = data[3].Trim()
+                });
+            }
             return students;
+        }
+
+        public List<Student> GetAllStudents(List<Student> student)
+        {
+            var lines = File.ReadAllLines(fileName);
+            foreach (var line in lines)
+            {
+                var data = line.Split(',');
+
+                student.Add(new Student
+                {
+                    ID = int.Parse(data[0].Trim()),
+                    Name = data[1].Trim(),
+                    Age = int.Parse(data[2].Trim()),
+                    Course = data[3].Trim()
+                });
+            }
+            return student;
         }
 
         // Runs when "Add" is clicked on addForm

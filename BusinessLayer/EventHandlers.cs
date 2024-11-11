@@ -45,10 +45,5 @@ namespace Group1_PRG282_Project.BusinessLayer
             Age = age;
             Course = course;
         }
-
-        public override string ToString()
-        {
-            return $"{ID}, {Name}, {Age}, {Course}";
-        }
     }
 }

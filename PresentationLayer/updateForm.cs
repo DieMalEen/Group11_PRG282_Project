@@ -10,12 +10,13 @@ using System.Windows.Forms;
 using System.IO;
 using System.Xml.Linq;
 using Group1_PRG282_Project.BusinessLayer;
+using Group1_PRG282_Project.DataLayer;
 
 namespace Group1_PRG282_Project
 {
     public partial class updateForm : Form
     {
-        public List<Student> students = new List<Student>(); //list 
+        public List<Student> student = new List<Student>(); //list 
         public string fileName = @"..\..\students.txt";  // file location
 
         public updateForm()
@@ -25,39 +26,26 @@ namespace Group1_PRG282_Project
             // Updates KeyPress EvenHandlers
             EventHandlers updateEvent = new EventHandlers();   
             StudentIDSearch.KeyPress += new KeyPressEventHandler(updateEvent.OnlyNumbers);
-            NameSearch.KeyPress += new KeyPressEventHandler(updateEvent.OnlyLetters); // event subsicbtion 
-
+            NameSearch.KeyPress += new KeyPressEventHandler(updateEvent.OnlyLetters);
+            studentIDEnter.KeyPress += new KeyPressEventHandler(updateEvent.OnlyNumbers);
+            nameEnter.KeyPress += new KeyPressEventHandler(updateEvent.OnlyLetters);
             LoadStudentData();
-            DisplayStudentsInGrid(students);
         }
+
         public void LoadStudentData() // Stores student info into list 
         {
-            students.Clear();
-            if (File.Exists(fileName))
-            {
-                var lines = File.ReadAllLines(fileName);
-                foreach (var line in lines)
-                {
-                    var data = line.Split(',');
-                    if (data.Length == 4)
-                    {
-                        students.Add(new Student
-                        {
-                            ID = int.Parse(data[0].Trim()),
-                            Name = data[1].Trim(),
-                            Age = int.Parse(data[2].Trim()),
-                            Course = data[3].Trim()
-                        });
-                    }
-                }
-            }
+            student.Clear();
+            StudentDataHandler studentDataHandler = new StudentDataHandler();
+            List<Student> students = studentDataHandler.GetAllStudents(student);
+            dataGridViewUpdate.DataSource = null;
+            dataGridViewUpdate.DataSource = students;
         }
 
         private void UpdateBT_Click(object sender, EventArgs e) // Runs update 
         {
             if (int.TryParse(studentIDEnter.Text, out int id))
             {
-                var studentToUpdate = students.FirstOrDefault(s => s.ID == id);
+                var studentToUpdate = student.FirstOrDefault(s => s.ID == id);
                 if (studentToUpdate != null)
                 {
                     studentToUpdate.Name = nameEnter.Text;
@@ -66,9 +54,9 @@ namespace Group1_PRG282_Project
 
                     SaveStudentsToFile();
                     LoadStudentData();
-                    DisplayStudentsInGrid(students);
                     MessageBox.Show("Student updated successfully!");
                 }
+
                 else
                 {
                     MessageBox.Show("Student not found.");
@@ -81,7 +69,7 @@ namespace Group1_PRG282_Project
         {
             using (StreamWriter writer = new StreamWriter(fileName))
             {
-                foreach (var student in students)
+                foreach (var student in student)
                 {
                     writer.WriteLine($"{student.ID},{student.Name},{student.Age},{student.Course}");
                 }
@@ -96,25 +84,18 @@ namespace Group1_PRG282_Project
             courseEnter.Clear();
         }
 
-        private void DisplayStudentsInGrid(List<Student> studentList) //displays students in gird 
-        {
-            dataGridViewUpdate.DataSource = null;
-            dataGridViewUpdate.DataSource = studentList;
-        }
-
         private void dataGridViewUpdate_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
                 // Get the DataGridView
                 DataGridView dgv = sender as DataGridView;
-
-                
+               
                 int selectedId = (int)dgv.Rows[e.RowIndex].Cells["ID"].Value;
 
-                var filteredStudents = students.Where(s =>s.ID == selectedId).ToList(); //filter for name display when selecting a  name
+                var filteredStudents = student.Where(s =>s.ID == selectedId).ToList(); //filter for name display when selecting a  name
 
-                if (filteredStudents.Count == 1) // Enters studnet details when pressing on student on datagridview
+                if (filteredStudents.Count == 1) // Enters student details when pressing on student on datagridview
                 {
                     var student = filteredStudents[0];
                     studentIDEnter.Text = student.ID.ToString();
@@ -131,15 +112,15 @@ namespace Group1_PRG282_Project
 
         private void StudentIDSearch_TextChanged(object sender, EventArgs e)  // search text for spefic student with ID 
         {
-            DataGridView dgv = sender as DataGridView;
-
-
              string searchText = StudentIDSearch.Text;
 
             if (int.TryParse(searchText, out int selectedId))
             {
 
-                var filteredStudents = students.Where(s => s.ID == selectedId).ToList();
+                var filteredStudents = student.Where(s => s.ID == selectedId).ToList();
+
+                dataGridViewUpdate.DataSource = null;
+                dataGridViewUpdate.DataSource = filteredStudents;
 
                 if (filteredStudents.Count == 1) 
                 {
@@ -149,37 +130,23 @@ namespace Group1_PRG282_Project
                     ageEnter.Text = student.Age.ToString();
                     courseEnter.Text = student.Course;
                 }
+
                 else
                 {
+                    LoadStudentData();
                     ClearTextBoxes();
                 }
             }
-            else
-            {
-                var filteredStudents = students;
-
-                if (filteredStudents.Count == 1) 
-                {
-                    var student = filteredStudents[0];
-                    studentIDEnter.Text = student.ID.ToString();
-                    nameEnter.Text = student.Name;
-                    ageEnter.Text = student.Age.ToString();
-                    courseEnter.Text = student.Course;
-                }
-                else
-                {
-                    ClearTextBoxes();
-                }
-            } 
         }
 
         private void NameSearch_TextChanged(object sender, EventArgs e) // search text for spefic student with name 
         {      
-            var filteredStudents = students.Where(s =>
+            var filteredStudents = student.Where(s =>
             (!string.IsNullOrWhiteSpace(NameSearch.Text)&& s.Name.IndexOf(NameSearch.Text, StringComparison.OrdinalIgnoreCase) >= 0)
             ).ToList();
 
-            DisplayStudentsInGrid(filteredStudents);
+            dataGridViewUpdate.DataSource = null;
+            dataGridViewUpdate.DataSource = filteredStudents;
 
             if (filteredStudents.Count == 1)
             {
@@ -189,13 +156,12 @@ namespace Group1_PRG282_Project
                 ageEnter.Text = student.Age.ToString();
                 courseEnter.Text = student.Course;
             }
+
             else
             {
-                DisplayStudentsInGrid(students);
+                LoadStudentData();
                 ClearTextBoxes();
             }
         }
-
     }
-
 }
